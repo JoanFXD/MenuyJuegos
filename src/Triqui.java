@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 public class Triqui {
+    private JPanel pan;
     private JButton button1;
     private JButton button2;
     private JButton button3;
@@ -45,5 +46,8 @@ public class Triqui {
             }
 
         }
+    }
+    public JPanel getPanelPrincipal() {
+        return pan;
     }
 }
