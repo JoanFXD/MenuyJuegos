@@ -6,7 +6,7 @@ public class Main {
         SwingUtilities.invokeLater(MenuPrin::new);
         SwingUtilities.invokeLater(() -> {
             JFrame frame = new JFrame("Mi Ventana Swing");
-            frame.setContentPane(new Triqui().getPanelPrincipal());
+            frame.setContentPane(new MenuPrin().getPanelPrincipal());
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.pack();
             frame.setLocationRelativeTo(null); // Centra la ventana
