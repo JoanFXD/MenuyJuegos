@@ -60,7 +60,14 @@ public class MenuPrin extends JFrame{
         ahorcadoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                SwingUtilities.invokeLater(() -> {
+                    JFrame frame = new JFrame("Mi Ventana Swing");
+                    frame.setContentPane(new Ahorcado().getPanelPrincipal());
+                    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    frame.pack();
+                    frame.setLocationRelativeTo(null); // Centra la ventana
+                    frame.setVisible(true);
+                });
             }
         });
 
